@@ -1,33 +1,50 @@
 .App {
   text-align: center;
+  border: 5px solid red;
+  margin-left: 33.33%;
+  margin-right: 33.33%;
+  margin-top: 2%;
+  background-color: aqua
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.nowPlaying{
+  border: 1px solid red;
+  background-color: #b8dbc4;
+  padding: 2%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icons{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.buttonContainer{
+  padding: 8%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.drumbutton{
+  margin-left: 1%;
+  background-color: red;
+  width: 30%;
+  height: 50px;
+}
+.drumbutton:hover{
+  background-color: green;
+}
+@keyframes showBody {
+  from {height: 0;}
+  to {height: 400px;}
+}
+@keyframes unshowBody {
+  from {height: 400px;}
+  to {height: 0px;}
+}
+.offmessage{
+  animation-name: unshowBody;
+  animation-duration: 1s;
+}
+.deviceBody{
+  animation-name: showBody;
+  animation-duration: 1s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
