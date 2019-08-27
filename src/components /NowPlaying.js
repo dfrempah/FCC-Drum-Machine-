@@ -10,24 +10,21 @@ class Nowplaying extends React.Component{
             <div className="nowPlaying">
                 <p style={{textAlign: "left"}}>Now playing...</p>
                 <div className="icons">
-                <FontAwesomeIcon icon="play" style={{float: "left"}}/>
+                <FontAwesomeIcon icon="play" style={{float: "left"}}/>{this.props.nowPlaying}
                 <div className="">
                 <FontAwesomeIcon icon="volume-up" style={{marginRight: '10%'}}/>
                 <p style={{display:"inline"}}>{this.props.volume}%</p>
                 </div>
-                
-    
                 </div>
-             
-                </div>
-               
+                </div>   
         )
     }
 }
 
 const mapStateToProps = (state) => {
     return{
-        volume: state.volume
+        volume: state.volume,
+        nowPlaying: state.nowPlaying
     }
 }
 

@@ -13,19 +13,6 @@ library.add(fas,faPlay,faPowerOff,faCoffee,faVolumeUp)
 
 
 class App extends React.Component{
-  componentDidMount() {
-    document.addEventListener('keydown', this.handleKeyPress);
-  }
-  componentWillUnmount() {
-    document.removeEventListener('keydown', this.handleKeyPress);
-  }
-  handleKeyPress = (e) => {
-    const letter = e.key.toUpperCase();
-    const array = this.props.letters;
-    console.log(array.findIndex('W'));
-    // console.log(index)
-
-  }
 
   render(){
   return (

@@ -3,6 +3,7 @@ const initialState = {
     volume: 50,
     bank: 1,
     sound: null,
+    nowPlaying: '',
     letters: ['Q','W','E','A','S','D','Z','X','C'],
      sounds: [{
         keyCode: 81,
@@ -66,6 +67,11 @@ const reducer = (state= initialState, action) => {
                 ...state,
                 power: !state.power
             }    
+        case 'UpdateNowPlaying':
+            return{
+                ...state,
+                nowPlaying: action.payload
+            }
         default: 
             return state;
     }

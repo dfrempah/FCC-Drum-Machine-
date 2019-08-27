@@ -24,12 +24,11 @@
 }
 .drumbutton{
   margin-left: 1%;
-  background-color: red;
+  border: 3px solid red;
+  margin-top: 3px;
+  margin-bottom: 3px;
   width: 30%;
   height: 50px;
-}
-.drumbutton:hover{
-  background-color: green;
 }
 @keyframes showBody {
   from {height: 0;}
