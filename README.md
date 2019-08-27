@@ -1,7 +1,7 @@
 # FCC: Build a Drum Machine
 
 
-## Tests Passed: 
+## Tests Passed: Functionality was not build against FCC test cases
 
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/MJyNMd.
 
